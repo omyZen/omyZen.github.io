@@ -1,783 +1,283 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
 
-
-
-  
-
-
-<html class="theme-next pisces use-motion">
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/vendors/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-  
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <title>Archives: 2017/6 | Hexo</title>
+  <meta name="description" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="/css/component.css" />
+  <link rel="stylesheet" type="text/css" href="/css/screen.css" />
+  <meta name="generator" content="Hexo">
+  <script src="http://static.duoshuo.com/embed.js"></script>
   
   
   
 
   
-    
-    
-  
 
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
-
-
-
-<link href="/vendors/font-awesome/css/font-awesome.min.css?v=4.4.0" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-  <link rel="alternate" href="/atom.xml" title="全科-不安分的码农" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.0.1" />
-
-
-
-
-
-
-<meta name="description" content="RelativeLayout，顾名思义，就是以“相对”位置/对齐 为基础的布局方式。android.widget.RelativeLayout 有个 继承自android.view.ViewGroup.LayoutParams 的内嵌类 LayoutParams，使用这个类的实例调用 RelativeLayout.addView 就可以实现“相对布局”。他比LinearLyout更灵活的为控件布置">
-<meta property="og:type" content="article">
-<meta property="og:title" content="RelativeLayout的基本属性用法以及代码实现">
-<meta property="og:url" content="http://quanke.name/2012/11/05/relativelayout/index.html">
-<meta property="og:site_name" content="全科-不安分的码农">
-<meta property="og:description" content="RelativeLayout，顾名思义，就是以“相对”位置/对齐 为基础的布局方式。android.widget.RelativeLayout 有个 继承自android.view.ViewGroup.LayoutParams 的内嵌类 LayoutParams，使用这个类的实例调用 RelativeLayout.addView 就可以实现“相对布局”。他比LinearLyout更灵活的为控件布置">
-<meta property="og:updated_time" content="2015-07-10T16:25:14.000Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="RelativeLayout的基本属性用法以及代码实现">
-<meta name="twitter:description" content="RelativeLayout，顾名思义，就是以“相对”位置/对齐 为基础的布局方式。android.widget.RelativeLayout 有个 继承自android.view.ViewGroup.LayoutParams 的内嵌类 LayoutParams，使用这个类的实例调用 RelativeLayout.addView 就可以实现“相对布局”。他比LinearLyout更灵活的为控件布置">
-
-
-
-<script type="text/javascript" id="hexo.configuration">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    scheme: 'Pisces',
-    sidebar: {"position":"left","display":"post"},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: 421249,
-      author: '全科'
-    }
-  };
-</script>
-
-
-
-
-  <link rel="canonical" href="http://quanke.name/2012/11/05/relativelayout/"/>
-
-  <title> RelativeLayout的基本属性用法以及代码实现 | 全科-不安分的码农 </title>
 </head>
+<body>
+<div class="container">
+    <div class="mp-pusher" id="mp-pusher">
+        <i id="scroll-up" class="fa fa-angle-up"></i>
+        <nav id="mp-menu" class="mp-menu">
+            <div class="mp-level">
+                <a data-pjax class="back-home" style="font-size: 20px" href="/"><h2 ><i class="fa fa-home"></i>
+                        Home</h2></a>
+                <ul class="first-level">
+                    <li>
+                        <a class="fa fa-archive" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Archive</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-archive"></i>
+                                Archive</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-archive" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2017/06/15/中文测试/">中文测试</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2017/06/15/test/">test</a>
+                                </li>
+                                
+                                <li class="search-archive-li mp-pjax">
+                                    <a href="/2017/06/15/hello-world/">Hello World</a>
+                                </li>
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-copy" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Categories</a>
+
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-copy"></i>
+                                Categories</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-category" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a class="fa fa-tags" href="#"><i class="fa fa-angle-left">
+                            </i>&nbsp;&nbsp;Tags</a>
+                        <div class="mp-level page-list">
+                            <h2 ><i class="fa fa-tags"></i>
+                                Tags</h2>
+                            <a class="mp-back" href="#">back</a>
+                            <form id="search-form" action="">
+                                <input type="text" class="search search-tag" placeholder="Search.."/>
+                            </form>
+                            <ul>
+                                <div class="mp-scroll">
+                                
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="mp-pjax"><a class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a></li>
+                    <li><a class="fa fa-github" href="#">&nbsp;&nbsp;&nbsp;Github</a></li>
+
+                </ul>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
-  
-
-
-
-  <script type="text/javascript">
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "//hm.baidu.com/hm.js?853906ed403c461b2dbf1df696bdf998";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
-
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">全科-不安分的码农</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-  </div>
-  <p class="site-subtitle">android，ios，html5，微服务架构，XP，scrum，项目管理（PMP）</p>
-</div>
-
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
-</div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-categories">
-          <a href="/categories" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
-            
-            分类
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
-            
-            关于
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-
-      
-    </ul>
-  
-
-  
-</nav>
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-
-  <div id="posts" class="posts-expand">
-    
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                RelativeLayout的基本属性用法以及代码实现
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2012-11-05T03:13:31+08:00" content="2012-11-05">
-              2012-11-05
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/android开发/" itemprop="url" rel="index">
-                    <span itemprop="name">android开发</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2012/11/05/relativelayout/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2012/11/05/relativelayout/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <p>RelativeLayout，顾名思义，就是以“相对”位置/对齐 为基础的布局方式。android.widget.RelativeLayout 有个 继承自android.view.ViewGroup.LayoutParams 的内嵌类 LayoutParams，使用这个类的实例调用 RelativeLayout.addView 就可以实现“相对布局”。他比LinearLyout更灵活的为控件布置位置.</p>
-<p><span style="color: #ff0000;">在新版本中属性的设置可能有变化，具体请看官方api</span></p>
-<p>RelativeLayout 的属性：<br>// 相对于给定ID控件</p>
-<p>android:layout_above 将该控件的底部置于给定ID的控件之上;</p>
-<p>android:layout_below 将该控件的底部置于给定ID的控件之下;</p>
-<p>android:layout_toLeftOf 将该控件的右边缘与给定ID的控件左边缘对齐;</p>
-<p>android:layout_toRightOf 将该控件的左边缘与给定ID的控件右边缘对齐;</p>
-<p>android:layout_alignBaseline 将该控件的baseline与给定ID的baseline对齐;</p>
-<p>android:layout_alignTop 将该控件的顶部边缘与给定ID的顶部边缘对齐;</p>
-<p>android:layout_alignBottom 将该控件的底部边缘与给定ID的底部边缘对齐;</p>
-<p>android:layout_alignLeft 将该控件的左边缘与给定ID的左边缘对齐;</p>
-<p>android:layout_alignRight 将该控件的右边缘与给定ID的右边缘对齐;</p>
-<p>// 相对于父组件</p>
-<p>android:layout_alignParentTop 如果为true,将该控件的顶部与其父控件的顶部对齐;</p>
-<p>android:layout_alignParentBottom 如果为true,将该控件的底部与其父控件的底部对齐;</p>
-<p>android:layout_alignParentLeft 如果为true,将该控件的左部与其父控件的左部对齐;</p>
-<p>android:layout_alignParentRight 如果为true,将该控件的右部与其父控件的右部对齐;</p>
-<p>// 居中</p>
-<p>android:layout_centerHorizontal 如果为true,将该控件的置于水平居中;</p>
-<p>android:layout_centerVertical 如果为true,将该控件的置于垂直居中;</p>
-<p>android:layout_centerInParent 如果为true,将该控件的置于父控件的中央;</p>
-<p>// 指定移动像素</p>
-<p>android:layout_marginTop 上偏移的值;</p>
-<p>android:layout_marginBottom 下偏移的值;</p>
-<p>android:layout_marginLeft 　　左偏移的值;</p>
-<p>android:layout_marginRight 　 右偏移的值;</p>
-<p>example:</p>
-<p>android:layout_below = “@id/<em>*</em>“</p>
-<p>android:layout_alignBaseline = “@id/<em>*</em>“</p>
-<p>android:layout_alignParentTop = true</p>
-<p>android:layout_marginLeft = “10px”</p>
-<p>以下是代码中的用法：</p>
-<p>[code lang=”java”]<br>import android.app.Activity;<br>import android.os.Bundle;<br>import android.widget.<em>;<br>import android.view.</em>;</p>
-<p>public class RLTest extends Activity {</p>
-<pre><code><span class="label">private</span> RelativeLayout rl<span class="comment">;</span>
-
-<span class="label">private</span> <span class="keyword">Button </span><span class="keyword">btn1;
-</span><span class="label">private</span> <span class="keyword">Button </span><span class="keyword">btn2;
-</span><span class="label">private</span> <span class="keyword">Button </span><span class="keyword">btn3;
-</span><span class="label">private</span> <span class="keyword">Button </span><span class="keyword">btn4;
-</span>
-<span class="label">private</span> static final int ID_BTN1 = <span class="number">1</span><span class="comment">;</span>
-<span class="label">private</span> static final int ID_BTN2 = <span class="number">2</span><span class="comment">;</span>
-<span class="label">private</span> static final int ID_BTN3 = <span class="number">3</span><span class="comment">;</span>
-<span class="label">private</span> static final int ID_BTN4 = <span class="number">4</span><span class="comment">;</span>
-
-<span class="comment">/** Called when the activity is first created. */</span>
-<span class="comment">@Override</span>
-<span class="label">public</span> void onCreate(<span class="keyword">Bundle </span>icicle) {
-    super.onCreate(icicle)<span class="comment">;</span>
-
-    rl = new RelativeLayout(this)<span class="comment">;</span>
-
-    <span class="keyword">btn1 </span>= new <span class="keyword">Button(this);
-</span>    <span class="keyword">btn1.setText(&amp;quot;----------------------&amp;quot;);
-</span>    <span class="keyword">btn1.setId(ID_BTN1);
-</span>
-    RelativeLayout.LayoutParams lp1 = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT)<span class="comment">;</span>
-    lp1.<span class="keyword">addRule(RelativeLayout.ALIGN_WITH_PARENT_TOP);
-</span>    lp1.<span class="keyword">addRule(RelativeLayout.CENTER_HORIZONTAL, </span>RelativeLayout.TRUE)<span class="comment">;</span>
-    // <span class="keyword">btn1 </span>位于父 View 的顶部，在父 View 中水平居中
-    rl.<span class="keyword">addView(btn1, </span>lp1 )<span class="comment">;</span>
-
-    <span class="keyword">btn2 </span>= new <span class="keyword">Button(this);
-</span>    <span class="keyword">btn2.setText(&amp;quot;|\n|\n|\n|\n|\n|&amp;quot;);
-</span>    <span class="keyword">btn2.setId(ID_BTN2);
-</span>
-    RelativeLayout.LayoutParams lp2 = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT)<span class="comment">;</span>
-    lp2.<span class="keyword">addRule(RelativeLayout.POSITION_BELOW, </span>ID_BTN1)<span class="comment">;</span>
-    lp2.<span class="keyword">addRule(RelativeLayout.ALIGN_LEFT, </span>ID_BTN1)<span class="comment">;</span>
-    // <span class="keyword">btn2 </span>位于 <span class="keyword">btn1 </span>的下方、其左边和 <span class="keyword">btn1 </span>的左边对齐
-    rl.<span class="keyword">addView(btn2, </span>lp2)<span class="comment">;</span>
-
-    <span class="keyword">btn3 </span>= new <span class="keyword">Button(this);
-</span>    <span class="keyword">btn3.setText(&amp;quot;|\n|\n|\n|\n|\n|&amp;quot;);
-</span>    <span class="keyword">btn3.setId(ID_BTN3);
-</span>
-    RelativeLayout.LayoutParams lp3 = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT)<span class="comment">;</span>
-   lp3.<span class="keyword">addRule(RelativeLayout.POSITION_BELOW, </span>ID_BTN1)<span class="comment">;</span>
-    lp3.<span class="keyword">addRule(RelativeLayout.POSITION_TO_RIGHT, </span>ID_BTN2)<span class="comment">;</span>
-    lp3.<span class="keyword">addRule(RelativeLayout.ALIGN_RIGHT, </span>ID_BTN1)<span class="comment">;</span>
-    // <span class="keyword">btn3 </span>位于 <span class="keyword">btn1 </span>的下方、<span class="keyword">btn2 </span>的右方且其右边和 <span class="keyword">btn1 </span>的右边对齐（要扩充）
-    rl.<span class="keyword">addView(btn3,lp3);
-</span>
-    <span class="keyword">btn4 </span>= new <span class="keyword">Button(this);
-</span>    <span class="keyword">btn4.setText(&amp;quot;--------------------------------------------&amp;quot;);
-</span>    <span class="keyword">btn4.setId(ID_BTN4);
-</span>
-    RelativeLayout.LayoutParams lp4 = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT)<span class="comment">;</span>
-    lp4.<span class="keyword">addRule(RelativeLayout.POSITION_BELOW, </span>ID_BTN2)<span class="comment">;</span>
-    lp4.<span class="keyword">addRule(RelativeLayout.CENTER_HORIZONTAL, </span>RelativeLayout.TRUE)<span class="comment">;</span>
-    // <span class="keyword">btn4 </span>位于 <span class="keyword">btn2 </span>的下方，在父 Veiw 中水平居中
-    rl.<span class="keyword">addView(btn4,lp4);
-</span>
-    setContentView(rl)<span class="comment">;</span>
-}
-</code></pre><p>}<br>[/code] </p>
-
-      
-    </div>
-
-    <div>
-      
-        
-
-      
-    </div>
-
-    <div>
-      
-        
-
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2012/11/05/android/android-xml-graphics/" rel="next" title="Android下基于XML的Graphics （转）">
-                <i class="fa fa-chevron-left"></i> Android下基于XML的Graphics （转）
-              </a>
-            
-          </div>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2012/11/05/spannablestring-e8-ae-b0-e5-bd-95/" rel="prev" title="android中的spannable String 使用记录">
-                android中的spannable String 使用记录 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </article>
-
-
-
-    <div class="post-spread">
-      
-        <div class="ds-share flat" data-thread-key="2012/11/05/relativelayout/"
-     data-title="RelativeLayout的基本属性用法以及代码实现"
-     data-content=""
-     data-url="http://quanke.name/2012/11/05/relativelayout/">
-  <div class="ds-share-inline">
-    <ul  class="ds-share-icons-16">
-
-      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
-      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
-      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
-      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
-      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
-
-    </ul>
-    <div class="ds-share-icons-more">
-    </div>
-  </div>
-</div>
-      
-    </div>
-  </div>
-
-
-          </div>
-          
-
-
-          
-  <div class="comments" id="comments">
-    
-      <div class="ds-thread" data-thread-key="2012/11/05/relativelayout/"
-           data-title="RelativeLayout的基本属性用法以及代码实现" data-url="http://quanke.name/2012/11/05/relativelayout/">
-      </div>
-    
-  </div>
-
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    <div class="sidebar-inner">
-
-      
-
-      
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
-
-      <section class="site-overview sidebar-panel ">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/dog.jpg"
-               alt="全科" />
-          <p class="site-author-name" itemprop="name">全科</p>
-          <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-        <nav class="site-state motion-element">
-          <div class="site-state-item site-state-posts">
-            <a href="/archives">
-              <span class="site-state-item-count">112</span>
-              <span class="site-state-item-name">日志</span>
-            </a>
-          </div>
-
-          
-            <div class="site-state-item site-state-categories">
-              <a href="/categories">
-                <span class="site-state-item-count">15</span>
-                <span class="site-state-item-name">分类</span>
-              </a>
             </div>
-          
-
-          
-            <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">30</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
-          
-
         </nav>
+        <div id="pjax">
+            <div class="pjax-hidden" style="display: none">
+                
+                    <a  data-pjax href="/2017/06/15/中文测试/">中文测试</a>
+                
+                    <a  data-pjax href="/2017/06/15/test/">test</a>
+                
+                    <a  data-pjax href="/2017/06/15/hello-world/">Hello World</a>
+                
+                
+                
+                <a data-pjax class="fa fa-user" href="/about">&nbsp;&nbsp;&nbsp;About me</a>
+            </div>
+            <nav class="nexus">
+                <li  style="border-left: 1px solid #c6d0da;">
+                    <a id="trigger" href="#"><i class="fa fa-bars"></i></a>
+                </li>
+                <li ><a id="nexus-back" data-pjax href="/">Hexo</a></li>
+                
+                <div id="nav-container">
+                    <div class="post-navbar" style="line-height: 63px;display:none">
+                        <li id="navbar-title"><a href="#">undefined</a></li>
+                        <li id="navbar-toc" style="border-left: none">
+                            <a style="padding-right: 15px">
+                                <span id="toc-content" >Introduction</span><i class="fa fa-chevron-down" ></i>
+                            </a>
+                            <div class="hidden-box">
+                                <ul id="toc"></ul>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+                
+            </nav>
 
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
-          </div>
-        
+            <div class="scroller">
+            <div class="scroller-inner">
 
-        <div class="links-of-author motion-element">
-          
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/quanke" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-github"></i>
-                  
-                  GitHub
-                </a>
-              </span>
-            
-          
-        </div>
 
-        
-        
+<!-- -->
+<!--<body class="home-template">-->
+<!---->
+  
+<main class="content" role="main">
 
-        
-        
+    
+    <article class="post">
 
-      </section>
+        <header class="post-header">
+            <div class="tag-tile">
+                
+                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
+            </div>
+            <h1 class="post-title"><a data-pjax href="/2017/06/15/中文测试/">中文测试</a>
+            </h1>
 
-      
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
+            <div class="post-meta">
+                Post on<span class="fa fa-clock-o"></span>
+                <time datetime="2017-06-15T09:42:38.000Z"
+                      itemprop="datePublished">2017-06-15</time>
+            </div>
+        </header>
+        <section class="post-excerpt">
+            <p>
+                
+                人生本生趣，无趣不人生。
+
+                
+            </p>
             
-              
-            
-            
-              <p class="post-toc-empty">此文章未包含目录</p>
-            
-          </div>
         </section>
-      
+    </article>
+    
+    <article class="post">
 
-    </div>
-  </aside>
+        <header class="post-header">
+            <div class="tag-tile">
+                
+                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
+            </div>
+            <h1 class="post-title"><a data-pjax href="/2017/06/15/test/">test</a>
+            </h1>
 
+            <div class="post-meta">
+                Post on<span class="fa fa-clock-o"></span>
+                <time datetime="2017-06-15T07:42:18.000Z"
+                      itemprop="datePublished">2017-06-15</time>
+            </div>
+        </header>
+        <section class="post-excerpt">
+            <p>
+                
+                firstsecond
+                
+            </p>
+            
+        </section>
+    </article>
+    
+    <article class="post">
 
+        <header class="post-header">
+            <div class="tag-tile">
+                
+                <span class="fa fa-bookmark" style="float:right;color:#f39c12"></span>
+            </div>
+            <h1 class="post-title"><a data-pjax href="/2017/06/15/hello-world/">Hello World</a>
+            </h1>
+
+            <div class="post-meta">
+                Post on<span class="fa fa-clock-o"></span>
+                <time datetime="2017-06-15T07:28:44.280Z"
+                      itemprop="datePublished">2017-06-15</time>
+            </div>
+        </header>
+        <section class="post-excerpt">
+            <p>
+                
+                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new p
+                
+            </p>
+            
+        </section>
+    </article>
+    
+    <nav class="pagination" role="pagination">
         
-      </div>
-    </main>
+        <span class="page-number">Page 1 of 1</span>
+        
+    </nav>
+</main>
 
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright" >
+
   
-  &copy; 
-  <span itemprop="copyrightYear">2017</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">全科</span>
-</div>
-
-<div class="powered-by">
-  由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Pisces
-  </a>
-</div>
-
-        
-
-        
-      </div>
-    </footer>
-
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
+<footer class="site-footer">
+    
+    <div class="inner">
+        <section class="copyright"><a href="/"></a> &copy; Hexo 2014</section>
+        <section class="poweredby">Published with <a target="_blank" href="http://hexo.io/">Hexo   </a> and Theme by <a target="_blank" href="https://github.com/yuche/hexo-theme-kael">Kael</a></section>
     </div>
-  </div>
+</footer>
+</div>
+</div><!-- /scroller -->
 
+</div><!-- /pusher -->
+</div><!-- /container -->
+</div>
+
+<!-- Easter eggs -->
+
+<div class="egg animated">
+    <a id="close-button" href="#">X</a>
+    <div class="block">
+        <div class="loading">
+            <span class="ball1"></span>
+            <span class="ball2"></span>
+        </div>
+    </div>
+</div>
   
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
+<script src="//cdn.staticfile.org/jquery/1.11.0/jquery.min.js"></script>
+<script>
+    if (!window.jQuery) {
+        var script = document.createElement('script');
+        script.src = "/js/jquery.min.js";
+        document.body.appendChild(script);
+    }
 </script>
+<script type="text/javascript" src="/js/lib.js"></script>
+<script type="text/javascript" src="/js/main.js"></script>
 
 
 
 
 
 
-
-
-
-  
-
-
-
-  
-  <script type="text/javascript" src="/vendors/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/vendors/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/vendors/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/vendors/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/vendors/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/vendors/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.0.1"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.0.1"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.0.1"></script>
-
-
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.0.1"></script>
-
-
-
-  
-
-  
-    
-  
-
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"quanke"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
-
-  
-    
-    <script src="/vendors/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-    <script src="/js/src/hook-duoshuo.js"></script>
-  
-
-
-
-
-
-
-  
-  
-
-  
-
-  
-
-  
 
 </body>
 </html>
